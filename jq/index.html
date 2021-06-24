@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+<body>
+    <!-- <p>Hello  World!</p> -->
+
+<!-- <input type="text" id="name" placeholder="Enter name ">
+<button id="submit">Submit</button> -->
+
+<!-- <p style="display: none;"><a href="https://makemelive.in/">https://makemelive.in/</a></p>
+
+<button>show button link</button> -->
+
+<!-- 
+<p id="p1">Hello  World!</p>
+
+<p id="p2">Hello jquery</p>
+
+<label >Name</label>
+<input type="text" id="name" placeholder="enter name">
+<br>
+<br>
+
+<button id="test1">Text</button>
+<button id="test2">Html</button>
+<button id="test3">show value</button> -->
+
+<!-- <p><a id="site" href="https://makemelive.in"> makemelive.in</a></p>
+<button>change href value</button>
+-->
+<!-- <p id="p1">welcome to</p>
+<p id="p2">welcome to </p> -->
+
+<!-- <button>append</button> -->
+<!-- <button>prepend</button> -->
+
+<!-- <p>Hello world!</p> -->
+<!-- <button onclick="appendText()">Append text</button> -->
+<!-- <button onclick="prependText()">prepend text</button> -->
+
+<p style="background-color: black; width: 60px;height: 100px;text-align: center;padding: 20px; color: red;">Hello</p>
+
+<button id="before">Before</button>
+<button id="after">After</button>
+
+
+
+<script src="./jquery-3.6.0.min.js">
+</script>
+
+<script>
+    // function appendText(){
+    // var t1 = "<p>Jquery</p>";
+    // var t2 = $("<p></p>").text("Jquery");
+    // var t3 = document.createElement("p");
+    // t3.innerHTML = "Jquery";
+    // $("body").append(t1,t2,t3);
+    // }
+      
+    // function prependText(){
+    // var t1 = "<p>Jquery</p>";
+    // var t2 = $("<p></p>").text("Jquery");
+    // var t3 = document.createElement("p");
+    // t3.innerHTML = "Jquery";
+    // $("body").prepend(t1,t2,t3);
+    // }
+$(document).ready(function()
+{
+
+$('#before').click(function(){
+$('p').before('Jquery');
+});
+
+$('#after').click(function(){
+$('p').after('Jss');
+});
+
+// $('button').click(function(){
+// $('#site').attr('href',"https://makemelive.in/about");
+// })
+
+// $('button').click(function(){
+// $('#p1').append(' word of jquery');
+// $('#p2').append(' invisible world!');
+// });
+
+// $('button').click(function(){
+// $('#p1').prepend(' word of jquery ');
+// $('#p2').prepend(' invisible world! ');
+// });
+
+
+// val() content
+// $('#submit').click(function(){
+// alert("value:" +$("#name").val());
+
+// });
+
+// for attributes()
+// $('button').click(function(){
+// alert($('p a').attr("href"));
+
+// });
+// $('#test1').click(function(){
+//     $('#p1').text("Makemelive");
+// });
+// $('#test2').click(function()
+// {
+// $('#p2').html("<b>Jquery</b>")
+// });
+// $('#test3').click(function()
+// {
+// $('#name').val("wlc Vikash");
+// });
+
+
+});
+</script>
+</body>
+
+
+
+</html>
